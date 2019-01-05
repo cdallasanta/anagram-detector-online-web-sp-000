@@ -9,10 +9,8 @@ class Anagram
     matches = []
     arr.each do |arr_word|
       arr_word_sorted = arr_word.sort
-      if arr_word_sorted.length == main_word_sorted.legnth
-        i = 0
-        until i == main_word_sorted.length
-          
+      if arr_word_sorted == main_word_sorted
+        matches << arr_word
       end
     end
   matches

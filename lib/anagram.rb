@@ -6,7 +6,11 @@ class Anagram
 
   def match(arr)
     word_sorted = @word.sorted
-    arr.each
+    matches = []
+    arr.each do |arr_word|
+      arr_word.sort
+    end
+  matches
   end
 
 end

@@ -5,10 +5,15 @@ class Anagram
   end
 
   def match(arr)
-    word_sorted = @word.sorted
+    main_word_sorted = @word.sort
     matches = []
     arr.each do |arr_word|
-      arr_word.sort
+      arr_word_sorted = arr_word.sort
+      if arr_word_sorted.length == main_word_sorted.legnth
+        i = 0
+        until i == main_word_sorted.length
+          
+      end
     end
   matches
   end
